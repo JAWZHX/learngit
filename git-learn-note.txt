@@ -43,3 +43,6 @@ $ git checkout -- filename , 将文件恢复。
 而命令& git rm 用于删除版本库里的文件，如果要恢复，就要用命令$ git log
 再用$ git reset --hard commit_id。回退到以前的版本。
 
+9、关联远程仓库，使用命令$ git remote add origin http://github.com/JAWZHX/learngit.git
+关联后，使用命令$ git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令 $ git push origin master推送最新修改。
